@@ -34,43 +34,43 @@ public class MainActivity extends AppCompatActivity {
 
         hashMap = null;
         hashMap = new HashMap<String, Object>();
-        hashMap.put("title", "Chapter Two");
-        hashMap.put("detail", "Item two details");
+        hashMap.put("title", "Chapter Three");
+        hashMap.put("detail", "Item Three details");
         hashMap.put("image", R.drawable.android_image_3);
         arrayList.add(hashMap);
 
         hashMap = null;
         hashMap = new HashMap<String, Object>();
-        hashMap.put("title", "Chapter Two");
-        hashMap.put("detail", "Item two details");
+        hashMap.put("title", "Chapter Four");
+        hashMap.put("detail", "Item Four details");
         hashMap.put("image", R.drawable.android_image_4);
         arrayList.add(hashMap);
 
         hashMap = null;
         hashMap = new HashMap<String, Object>();
-        hashMap.put("title", "Chapter Two");
-        hashMap.put("detail", "Item two details");
+        hashMap.put("title", "Chapter Five");
+        hashMap.put("detail", "Item Five details");
         hashMap.put("image", R.drawable.android_image_5);
         arrayList.add(hashMap);
 
         hashMap = null;
         hashMap = new HashMap<String, Object>();
-        hashMap.put("title", "Chapter Two");
-        hashMap.put("detail", "Item two details");
+        hashMap.put("title", "Chapter Six");
+        hashMap.put("detail", "Item Six details");
         hashMap.put("image", R.drawable.android_image_6);
         arrayList.add(hashMap);
 
         hashMap = null;
         hashMap = new HashMap<String, Object>();
-        hashMap.put("title", "Chapter Two");
-        hashMap.put("detail", "Item two details");
+        hashMap.put("title", "Chapter Seven");
+        hashMap.put("detail", "Item Seven details");
         hashMap.put("image", R.drawable.android_image_7);
         arrayList.add(hashMap);
 
         hashMap = null;
         hashMap = new HashMap<String, Object>();
-        hashMap.put("title", "Chapter Two");
-        hashMap.put("detail", "Item two details");
+        hashMap.put("title", "Chapter Eight");
+        hashMap.put("detail", "Item Eight details");
         hashMap.put("image", R.drawable.android_image_8);
         arrayList.add(hashMap);
 
