@@ -1,21 +1,29 @@
 package com.example.user.myrecyclerview;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.HashMap;
+import org.w3c.dom.Text;
+
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
     RecyclerAdapter adapter;
-
-
+    MyDBOpenHelper dbHelper;
+    SQLiteDatabase mdb;
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dbHelper = new MyDBOpenHelper(this);
+        mdb = dbHelper.getWritableDatabase();
+        adapter = new RecyclerAdapter(mdb);
 
         ArrayList<HashMap<String, Object>> arrayList = new ArrayList<HashMap<String, Object>>();
         HashMap<String, Object> hashMap = null;
@@ -78,8 +86,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        adapter = new RecyclerAdapter(arrayList);
+        //adapter = new RecyclerAdapter(arrayList);
         recyclerView.setAdapter(adapter);
-    }
+        }
 }
 
